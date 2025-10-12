@@ -1,0 +1,50 @@
+<?php
+
+declare(strict_types=1);
+/**
+ * Third-party RocketMQ Client SDK for Hyperf
+ *
+ * @contact colisys@duck.com
+ * @license MIT
+ * @copyright 2025 Colisys
+ */
+
+namespace Colisys\Rocketmq\Contract;
+
+use Colisys\Rocketmq\Impl\Consumer;
+use Colisys\Rocketmq\Impl\Producer;
+use Psr\Container\ContainerInterface;
+
+class ClientContainer implements ContainerInterface
+{
+    /**
+     * @var array<Consumer|Producer>
+     */
+    public static $clients = [];
+
+    public function add($name, $client)
+    {
+        if (isset($name)) {
+            self::$clients[$name] = $client;
+        } else {
+            self::$clients[] = $client;
+        }
+    }
+
+    public function get(string $id)
+    {
+        return self::$clients[$id];
+    }
+
+    public function has(string $id): bool
+    {
+        return isset(self::$clients[$id]);
+    }
+
+    public function shutdown()
+    {
+        foreach (self::$clients as $client) {
+            $client->shutdown();
+        }
+    }
+}
