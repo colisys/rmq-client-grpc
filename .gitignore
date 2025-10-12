@@ -1,0 +1,9 @@
+protocol/
+rocketmq-apis/
+.phpunit.cache/
+.vscode/
+vendor/
+
+composer.lock
+.DS_Store
+*.cache
