@@ -1,0 +1,5 @@
+# 版本更新记录
+
+## 0.0.1-dev
+
+该版本为首个开发版本，实现了 RocketMQ 的 Producer 和 Consumer 的基本功能（通过 gRPC），包括消息发送和接收。

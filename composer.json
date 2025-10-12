@@ -1,7 +1,6 @@
 {
     "name": "colisys/rocketmq-client-php",
     "type": "library",
-    "version": "0.0.1-dev",
     "license": "MIT",
     "keywords": [
         "php",
