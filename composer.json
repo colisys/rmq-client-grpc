@@ -31,7 +31,7 @@
         "hyperf/di": "^3.1",
         "hyperf/framework": "^3.0",
         "hyperf/grpc-client": "^3.0",
-        "hyperf/logger": "*",
+        "hyperf/logger": "^3.0",
         "hyperf/pool": "^3.0",
         "hyperf/socket": "^3.1"
     },
