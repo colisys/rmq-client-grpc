@@ -1,6 +1,7 @@
 {
     "name": "colisys/rocketmq-client-php",
     "type": "library",
+    "version": "0.0.2-dev",
     "license": "MIT",
     "keywords": [
         "php",
@@ -65,9 +66,9 @@
             "git submodule update --remote",
             "rm -rf protocol",
             "mkdir protocol",
-            "cd rocketmq-apis && protoc --php_out=../protocol -I ./ ./apache/rocketmq/v2/definition.proto",
-            "cd rocketmq-apis && protoc --php_out=../protocol -I ./ ./apache/rocketmq/v2/service.proto",
-            "cd rocketmq-apis && protoc --php_out=../protocol -I ./ ./apache/rocketmq/v2/admin.proto",
+            "cd rocketmq-apis && protoc --experimental_allow_proto3_optional --php_out=../protocol -I ./ ./apache/rocketmq/v2/definition.proto",
+            "cd rocketmq-apis && protoc --experimental_allow_proto3_optional --php_out=../protocol -I ./ ./apache/rocketmq/v2/service.proto",
+            "cd rocketmq-apis && protoc --experimental_allow_proto3_optional --php_out=../protocol -I ./ ./apache/rocketmq/v2/admin.proto",
             "composer dump-autoload"
         ]
     },

@@ -148,7 +148,9 @@ class Consumer
                     Coroutine::sleep($this->options->heartbeatInterval);
                 }
             }
-            Log::critical("* RocketMQ error: Consumer #{$this->options->clientId} start failed, reason=" . ($response?->getStatus()?->getMessage() ?? 'Coroutine internal exception'));
+            if ($response !== false) {
+                Log::critical("* RocketMQ error: Consumer #{$this->options->clientId} start failed, reason=" . ($response->getStatus()?->getMessage() ?? 'Coroutine internal exception'));
+            }
             throw new Exception('RocketMQ error: Consumer heartbeat coroutine broken');
         });
         // For ReceiveMessage
@@ -301,6 +303,6 @@ class Consumer
     {
         return make(ConsumerFactory::class, [
             'container' => $this->container ?? ApplicationContext::getContainer(),
-        ])->using(null, $callback);
+        ])->using($this->options, $callback);
     }
 }

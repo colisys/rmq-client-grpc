@@ -209,6 +209,6 @@ class Producer
     {
         return make(ProducerFactory::class, [
             'container' => $this->container ?? ApplicationContext::getContainer(),
-        ])->using(null, $callback);
+        ])->using($this->options, $callback);
     }
 }
