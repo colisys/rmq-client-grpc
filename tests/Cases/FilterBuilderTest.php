@@ -9,9 +9,9 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RmqClient\Shared\Tests\Cases;
+namespace Colisys\RmqClient\Grpc\Tests\Cases;
 
-use Colisys\RmqClient\Shared\Builder\FilterBuilder;
+use Colisys\RmqClient\Grpc\Builder\FilterBuilder;
 use Hyperf\Testing\TestCase;
 
 /**

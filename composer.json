@@ -14,14 +14,11 @@
             "Colisys\\RmqClient\\Grpc\\": "src/",
             "Apache\\Rocketmq\\": "protocol/Apache/Rocketmq/",
             "GPBMetadata\\Apache\\Rocketmq\\": "protocol/GPBMetadata/Apache/Rocketmq/"
-        },
-        "files": [
-            "src/Helper/Functions.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
-            "Colisys\\RmqClient\\Tests\\": "tests/"
+            "Colisys\\RmqClient\\Grpc\\Tests\\": "tests/"
         }
     },
     "require": {

@@ -9,16 +9,16 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RmqClient\Shared\Tests\Cases;
+namespace Colisys\RmqClient\Grpc\Tests\Cases;
 
 use Apache\Rocketmq\V2\ReceiveMessageResponse;
-use Colisys\RmqClient\Shared\Builder\ConsumerBuilder;
-use Colisys\RmqClient\Shared\Constant\MessageConsumeStatus;
-use Colisys\RmqClient\Shared\Contract\ConnectionOption;
+use Colisys\RmqClient\Grpc\Builder\ConsumerBuilder;
+use Colisys\RmqClient\Grpc\Constant\MessageConsumeStatus;
+use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
 use Colisys\RmqClient\Shared\Helper\Log;
-use Colisys\RmqClient\Shared\Impl\Consumer;
-use Colisys\RmqClient\Shared\Override\ServerStreamCall;
-use Colisys\RmqClient\Shared\View\MessageView;
+use Colisys\RmqClient\Grpc\Impl\Consumer;
+use Colisys\RmqClient\Grpc\Override\ServerStreamCall;
+use Colisys\RmqClient\Grpc\View\MessageView;
 use Hyperf\Grpc\Parser;
 use PHPUnit\Framework\TestCase;
 

@@ -9,16 +9,16 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RmqClient\Shared\Tests\Cases;
+namespace Colisys\RmqClient\Grpc\Tests\Cases;
 
-use Colisys\RmqClient\Shared\Annotation\Producer as AnnotationProducer;
-use Colisys\RmqClient\Shared\Builder\ProducerBuilder;
-use Colisys\RmqClient\Shared\Builder\SimpleMessageBuilder;
-use Colisys\RmqClient\Shared\Builder\TransactionMessageBuilder;
-use Colisys\RmqClient\Shared\Constant\TransactionResult;
-use Colisys\RmqClient\Shared\Contract\ConnectionOption;
-use Colisys\RmqClient\Shared\Contract\MessageBuilder;
-use Colisys\RmqClient\Shared\Impl\Producer;
+use Colisys\RmqClient\Grpc\Annotation\Producer as AnnotationProducer;
+use Colisys\RmqClient\Grpc\Builder\ProducerBuilder;
+use Colisys\RmqClient\Grpc\Builder\SimpleMessageBuilder;
+use Colisys\RmqClient\Grpc\Builder\TransactionMessageBuilder;
+use Colisys\RmqClient\Grpc\Constant\TransactionResult;
+use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
+use Colisys\RmqClient\Grpc\Contract\MessageBuilder;
+use Colisys\RmqClient\Grpc\Impl\Producer;
 use PHPUnit\Framework\TestCase;
 use Swoole\Coroutine;
 
