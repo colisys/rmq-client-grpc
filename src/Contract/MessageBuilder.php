@@ -18,8 +18,8 @@ use Apache\Rocketmq\V2\Resource;
 use Apache\Rocketmq\V2\SendMessageResponse;
 use Apache\Rocketmq\V2\SystemProperties;
 use Colisys\RmqClient\Grpc\View\SendResultView;
-use Colisys\Rocketmq\Helper\Arr;
-use Colisys\Rocketmq\Helper\Assert;
+use Colisys\RmqClient\Shared\Helper\Arr;
+use Colisys\RmqClient\Shared\Helper\Assert;
 
 abstract class MessageBuilder
 {

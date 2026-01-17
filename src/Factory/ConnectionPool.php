@@ -15,7 +15,7 @@ use Colisys\RmqClient\Grpc\Builder\MetadataBuilder;
 use Colisys\RmqClient\Grpc\Constant\SDK;
 use Colisys\RmqClient\Grpc\Contract\ClientWrapper;
 use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
-use Colisys\Rocketmq\Helper\Signature;
+use Colisys\RmqClient\Shared\Helper\Signature;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\Contract\ConnectionInterface;
 use Hyperf\Pool\Pool;

@@ -38,8 +38,8 @@ use Colisys\RmqClient\Grpc\Constant\SDK;
 use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
 use Colisys\RmqClient\Grpc\Factory\ConsumerFactory;
 use Colisys\RmqClient\Grpc\View\MessageView;
-use Colisys\Rocketmq\Helper\Arr;
-use Colisys\Rocketmq\Helper\Log;
+use Colisys\RmqClient\Shared\Helper\Arr;
+use Colisys\RmqClient\Shared\Helper\Log;
 use Exception;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\Coordinator\CoordinatorManager;
@@ -47,10 +47,10 @@ use Swoole\Coroutine;
 use Swoole\Coroutine\Channel;
 use Throwable;
 
-use function Colisys\Rocketmq\Helper\duration;
-use function Colisys\Rocketmq\Helper\resource;
-use function Colisys\Rocketmq\Helper\timestamp;
-use function Colisys\Rocketmq\Helper\timestamp_diff;
+use function Colisys\RmqClient\Shared\Helper\duration;
+use function Colisys\RmqClient\Shared\Helper\resource;
+use function Colisys\RmqClient\Shared\Helper\timestamp;
+use function Colisys\RmqClient\Shared\Helper\timestamp_diff;
 use function Hyperf\Support\make;
 
 class Consumer

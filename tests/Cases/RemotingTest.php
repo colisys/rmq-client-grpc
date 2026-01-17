@@ -10,20 +10,20 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Colisys\Rocketmq\Tests\Cases;
+namespace Colisys\RmqClient\Shared\Tests\Cases;
 
-use Colisys\Rocketmq\Remoting\Command\CheckClientConfigCommand;
-use Colisys\Rocketmq\Remoting\Command\GetAllTopicsFromNamesrvCommand;
-use Colisys\Rocketmq\Remoting\Command\SendMessageCommand;
-use Colisys\Rocketmq\Remoting\Contract\ConsumeFromWhere;
-use Colisys\Rocketmq\Remoting\Contract\ConsumeType;
-use Colisys\Rocketmq\Remoting\Contract\MessageModel;
-use Colisys\Rocketmq\Remoting\CoroutineClient;
-use Colisys\Rocketmq\Remoting\Model\ConsumerData;
-use Colisys\Rocketmq\Remoting\Model\ProducerData;
-use Colisys\Rocketmq\Remoting\RemotingCommand;
-use Colisys\Rocketmq\Remoting\RemotingCommandType;
-use Colisys\Rocketmq\Remoting\RequestCode;
+use Colisys\RmqClient\Shared\Remoting\Command\CheckClientConfigCommand;
+use Colisys\RmqClient\Shared\Remoting\Command\GetAllTopicsFromNamesrvCommand;
+use Colisys\RmqClient\Shared\Remoting\Command\SendMessageCommand;
+use Colisys\RmqClient\Shared\Remoting\Contract\ConsumeFromWhere;
+use Colisys\RmqClient\Shared\Remoting\Contract\ConsumeType;
+use Colisys\RmqClient\Shared\Remoting\Contract\MessageModel;
+use Colisys\RmqClient\Shared\Remoting\CoroutineClient;
+use Colisys\RmqClient\Shared\Remoting\Model\ConsumerData;
+use Colisys\RmqClient\Shared\Remoting\Model\ProducerData;
+use Colisys\RmqClient\Shared\Remoting\RemotingCommand;
+use Colisys\RmqClient\Shared\Remoting\RemotingCommandType;
+use Colisys\RmqClient\Shared\Remoting\RequestCode;
 use Hyperf\Coroutine\Coroutine;
 use Hyperf\Testing\TestCase;
 

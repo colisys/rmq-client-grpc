@@ -15,7 +15,7 @@ use Colisys\RmqClient\Grpc\Contract\ClientContainer;
 use Hyperf\Signal\Annotation\Signal;
 use Hyperf\Signal\SignalHandlerInterface;
 
-use function Colisys\Rocketmq\Helper\container;
+use function Colisys\RmqClient\Shared\Helper\container;
 
 #[Signal]
 class ProcessExitHandler implements SignalHandlerInterface

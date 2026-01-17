@@ -30,7 +30,7 @@ use Closure;
 use Colisys\RmqClient\Grpc\Override\BaseClient;
 use Colisys\RmqClient\Grpc\Override\ServerStreamCall;
 use Colisys\RmqClient\Grpc\Override\StreamingCall;
-use Colisys\Rocketmq\Helper\Log;
+use Colisys\RmqClient\Shared\Helper\Log;
 use Error;
 use Exception;
 use Hyperf\Coordinator\Constants;

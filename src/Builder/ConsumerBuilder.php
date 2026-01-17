@@ -20,14 +20,14 @@ use Colisys\RmqClient\Grpc\Constant\MessageConsumeStatus;
 use Colisys\RmqClient\Grpc\Contract\ClientContainer;
 use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
 use Colisys\RmqClient\Grpc\Impl\Consumer;
-use Colisys\Rocketmq\Helper\Assert;
+use Colisys\RmqClient\Shared\Helper\Assert;
 use Hyperf\Context\ApplicationContext;
 use Psr\Container\ContainerInterface;
 use ReflectionMethod;
 use ReflectionNamedType;
 use Swoole\Coroutine;
 
-use function Colisys\Rocketmq\Helper\container;
+use function Colisys\RmqClient\Shared\Helper\container;
 
 class ConsumerBuilder
 {

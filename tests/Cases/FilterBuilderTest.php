@@ -9,9 +9,9 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Tests\Cases;
+namespace Colisys\RmqClient\Shared\Tests\Cases;
 
-use Colisys\Rocketmq\Builder\FilterBuilder;
+use Colisys\RmqClient\Shared\Builder\FilterBuilder;
 use Hyperf\Testing\TestCase;
 
 /**

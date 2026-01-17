@@ -13,7 +13,7 @@ namespace Colisys\RmqClient\Grpc\Builder;
 
 use Colisys\RmqClient\Grpc\Contract\FilterBoolean;
 use Colisys\RmqClient\Grpc\Contract\FilterOperator;
-use Colisys\Rocketmq\Helper\Assert;
+use Colisys\RmqClient\Shared\Helper\Assert;
 
 /**
  * This builder is used to build SQL92 filter expression.

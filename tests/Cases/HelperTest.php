@@ -9,9 +9,9 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Tests\Cases;
+namespace Colisys\RmqClient\Shared\Tests\Cases;
 
-use Colisys\Rocketmq\Helper\Arr;
+use Colisys\RmqClient\Shared\Helper\Arr;
 use Hyperf\Testing\TestCase;
 
 /**

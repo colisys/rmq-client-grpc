@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Colisys\RmqClient\Grpc\Builder;
 
-use Colisys\Rocketmq\Helper\Set;
+use Colisys\RmqClient\Shared\Helper\Set;
 
 class TagBuilder
 {

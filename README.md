@@ -24,18 +24,18 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Apache\Rocketmq\V2\SendResultEntry;
-use Colisys\Rocketmq\Annotation\Producer;
-use Colisys\Rocketmq\Builder\ProducerBuilder;
-use Colisys\Rocketmq\Builder\SimpleMessageBuilder;
-use Colisys\Rocketmq\Contract\ConnectionOption;
-use Colisys\Rocketmq\Contract\MessageBuilder;
-use Colisys\Rocketmq\Helper\Arr;
-use Colisys\Rocketmq\Helper\Log;
+use Colisys\RmqClient\Shared\Annotation\Producer;
+use Colisys\RmqClient\Shared\Builder\ProducerBuilder;
+use Colisys\RmqClient\Shared\Builder\SimpleMessageBuilder;
+use Colisys\RmqClient\Shared\Contract\ConnectionOption;
+use Colisys\RmqClient\Shared\Contract\MessageBuilder;
+use Colisys\RmqClient\Shared\Helper\Arr;
+use Colisys\RmqClient\Shared\Helper\Log;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\GetMapping;
 
-use function Colisys\Rocketmq\Helper	imestamp;
-use function Colisys\Rocketmq\Helper	imestamp_diff;
+use function Colisys\RmqClient\Shared\Helper	imestamp;
+use function Colisys\RmqClient\Shared\Helper	imestamp_diff;
 
 #[Controller()]
 class IndexController extends AbstractController
@@ -111,11 +111,11 @@ declare(strict_types=1);
 
 namespace App\Listener;
 
-use Colisys\Rocketmq\Builder\ConsumerBuilder;
-use Colisys\Rocketmq\Constant\MessageConsumeStatus;
-use Colisys\Rocketmq\Contract\ConnectionOption;
-use Colisys\Rocketmq\Helper\Log;
-use Colisys\Rocketmq\View\MessageView;
+use Colisys\RmqClient\Shared\Builder\ConsumerBuilder;
+use Colisys\RmqClient\Shared\Constant\MessageConsumeStatus;
+use Colisys\RmqClient\Shared\Contract\ConnectionOption;
+use Colisys\RmqClient\Shared\Helper\Log;
+use Colisys\RmqClient\Shared\View\MessageView;
 use Hyperf\Event\Annotation\Listener;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\MainWorkerStart;
@@ -152,7 +152,7 @@ class ServerStartListener implements ListenerInterface
 
 ## 配置
 
-所有配置都是动态的，`Colisys\Rocketmq\Builder\ConsumerFactory` 和 `Colisys\Rocketmq\Builder\ProducerFactory` 的构造函数接受一个 `Colisys\Rocketmq\Contract\ConnectionOption` 的实例，您可以手动初始化它或使用默认配置。
+所有配置都是动态的，`Colisys\RmqClient\Shared\Builder\ConsumerFactory` 和 `Colisys\RmqClient\Shared\Builder\ProducerFactory` 的构造函数接受一个 `Colisys\RmqClient\Shared\Contract\ConnectionOption` 的实例，您可以手动初始化它或使用默认配置。
 
 |      配置名称       |          默认值           | 描述                             |
 | :-----------------: | :-----------------------: | :------------------------------- |
@@ -252,8 +252,8 @@ Stack trace:
 #0 /home/helix/hyperf-skeleton/vendor/hyperf/grpc-client/src/BaseClient.php(164): Hyperf\GrpcClient\GrpcClient->start()
 #1 /home/helix/hyperf-skeleton/vendor/hyperf/grpc-client/src/BaseClient.php(56): Hyperf\GrpcClient\BaseClient->start()
 #2 /home/helix/colisys/rocketmq-client-php/src/Contract/ClientWrapper.php(415): Hyperf\GrpcClient\BaseClient->_getGrpcClient()
-#3 /home/helix/colisys/rocketmq-client-php/src/Contract/ClientWrapper.php(105): Colisys\Rocketmq\Contract\ClientWrapper->getStream()
-#4 [internal function]: Colisys\Rocketmq\Contract\ClientWrapper->Colisys\Rocketmq\Contract\{closure}()
+#3 /home/helix/colisys/rocketmq-client-php/src/Contract/ClientWrapper.php(105): Colisys\RmqClient\Shared\Contract\ClientWrapper->getStream()
+#4 [internal function]: Colisys\RmqClient\Shared\Contract\ClientWrapper->Colisys\RmqClient\Shared\Contract\{closure}()
 #5 {main}
   thrown in /home/helix/hyperf-skeleton/vendor/hyperf/grpc-client/src/GrpcClient.php on line 107
 ```

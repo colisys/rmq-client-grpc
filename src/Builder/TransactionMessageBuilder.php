@@ -15,7 +15,7 @@ use Apache\Rocketmq\V2\MessageType;
 use Closure;
 use Colisys\RmqClient\Grpc\Constant\TransactionResult;
 use Colisys\RmqClient\Grpc\Contract\MessageBuilder;
-use Colisys\Rocketmq\Helper\Assert;
+use Colisys\RmqClient\Shared\Helper\Assert;
 use ReflectionMethod;
 
 class TransactionMessageBuilder extends MessageBuilder

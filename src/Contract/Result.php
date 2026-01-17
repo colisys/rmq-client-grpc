@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Contract;
+namespace Colisys\RmqClient\Shared\Contract;
 
 /**
  * @template C

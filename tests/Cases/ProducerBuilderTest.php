@@ -9,21 +9,21 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Tests\Cases;
+namespace Colisys\RmqClient\Shared\Tests\Cases;
 
-use Colisys\Rocketmq\Annotation\Producer as AnnotationProducer;
-use Colisys\Rocketmq\Builder\ProducerBuilder;
-use Colisys\Rocketmq\Builder\SimpleMessageBuilder;
-use Colisys\Rocketmq\Builder\TransactionMessageBuilder;
-use Colisys\Rocketmq\Constant\TransactionResult;
-use Colisys\Rocketmq\Contract\ConnectionOption;
-use Colisys\Rocketmq\Contract\MessageBuilder;
-use Colisys\Rocketmq\Impl\Producer;
+use Colisys\RmqClient\Shared\Annotation\Producer as AnnotationProducer;
+use Colisys\RmqClient\Shared\Builder\ProducerBuilder;
+use Colisys\RmqClient\Shared\Builder\SimpleMessageBuilder;
+use Colisys\RmqClient\Shared\Builder\TransactionMessageBuilder;
+use Colisys\RmqClient\Shared\Constant\TransactionResult;
+use Colisys\RmqClient\Shared\Contract\ConnectionOption;
+use Colisys\RmqClient\Shared\Contract\MessageBuilder;
+use Colisys\RmqClient\Shared\Impl\Producer;
 use PHPUnit\Framework\TestCase;
 use Swoole\Coroutine;
 
-use function Colisys\Rocketmq\Helper\timestamp;
-use function Colisys\Rocketmq\Helper\timestamp_diff;
+use function Colisys\RmqClient\Shared\Helper\timestamp;
+use function Colisys\RmqClient\Shared\Helper\timestamp_diff;
 
 /**
  * @internal
