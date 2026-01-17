@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Contract;
+namespace Colisys\RocketmqClient\Grpc\Contract;
 
 use Apache\Rocketmq\V2\GetOffsetRequest;
 use Apache\Rocketmq\V2\GetOffsetResponse;
@@ -28,9 +28,9 @@ use Apache\Rocketmq\V2\UpdateOffsetRequest;
 use Apache\Rocketmq\V2\UpdateOffsetResponse;
 use Closure;
 use Colisys\Rocketmq\Helper\Log;
-use Colisys\Rocketmq\Override\BaseClient;
-use Colisys\Rocketmq\Override\ServerStreamCall;
-use Colisys\Rocketmq\Override\StreamingCall;
+use Colisys\RocketmqClient\Grpc\Override\BaseClient;
+use Colisys\RocketmqClient\Grpc\Override\ServerStreamCall;
+use Colisys\RocketmqClient\Grpc\Override\StreamingCall;
 use Error;
 use Exception;
 use Hyperf\Coordinator\Constants;

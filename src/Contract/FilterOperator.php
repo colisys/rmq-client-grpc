@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Contract;
+namespace Colisys\RocketmqClient\Grpc\Contract;
 
 /**
  * SQL92 Filter Operators.

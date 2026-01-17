@@ -9,18 +9,18 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Builder;
+namespace Colisys\RocketmqClient\Grpc\Builder;
 
 use Apache\Rocketmq\V2\ClientType;
 use Apache\Rocketmq\V2\FilterExpression;
 use Apache\Rocketmq\V2\FilterType;
 use Apache\Rocketmq\V2\Settings;
 use Closure;
-use Colisys\Rocketmq\Constant\MessageConsumeStatus;
-use Colisys\Rocketmq\Contract\ClientContainer;
-use Colisys\Rocketmq\Contract\ConnectionOption;
+use Colisys\RocketmqClient\Grpc\Constant\MessageConsumeStatus;
+use Colisys\RocketmqClient\Grpc\Contract\ClientContainer;
+use Colisys\RocketmqClient\Grpc\Contract\ConnectionOption;
 use Colisys\Rocketmq\Helper\Assert;
-use Colisys\Rocketmq\Impl\Consumer;
+use Colisys\RocketmqClient\Grpc\Impl\Consumer;
 use Hyperf\Context\ApplicationContext;
 use Psr\Container\ContainerInterface;
 use ReflectionMethod;

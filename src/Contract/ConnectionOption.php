@@ -9,10 +9,10 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Contract;
+namespace Colisys\RocketmqClient\Grpc\Contract;
 
 use Apache\Rocketmq\V2\ClientType;
-use Colisys\Rocketmq\Constant\Protocol;
+use Colisys\RocketmqClient\Grpc\Constant\Protocol;
 use Hyperf\GrpcClient\GrpcClient;
 
 /**

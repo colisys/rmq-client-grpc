@@ -9,11 +9,11 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Factory;
+namespace Colisys\RocketmqClient\Grpc\Factory;
 
 use Closure;
-use Colisys\Rocketmq\Client\ProducerClient;
-use Colisys\Rocketmq\Contract\ConnectionOption;
+use Colisys\RocketmqClient\Grpc\Client\ProducerClient;
+use Colisys\RocketmqClient\Grpc\Contract\ConnectionOption;
 use Hyperf\Contract\ConnectionInterface;
 
 use function Hyperf\Support\make;

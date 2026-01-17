@@ -9,9 +9,9 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Factory;
+namespace Colisys\RocketmqClient\Grpc\Factory;
 
-use Colisys\Rocketmq\Contract\ConnectionOption;
+use Colisys\RocketmqClient\Grpc\Contract\ConnectionOption;
 use Psr\Container\ContainerInterface;
 
 abstract class BaseFactory

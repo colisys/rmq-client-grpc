@@ -229,3 +229,34 @@ Remoting 协议适用于 RocketMQ 的 `~4` 和 `~5` 版本。
 ✅: 已支持\
 🔍: 已完成开发，但尚未测试\
 🚧: 开发中
+<<<<<<< Updated upstream
+=======
+
+### Debug / Contribute 抓虫/贡献
+
+如果您遇到任何问题，请提交 Issue 或 PR。
+
+您需要安装 Xdebug，在此不进行赘述，请前往官网获取安装教程。
+
+以 VS Code 为例，您需要先安装 Xdebug Debugger 扩展，然后启动 Listen for Xdebug 配置文件，再执行此命令，启动框架：
+
+```bash
+$ php -d xdebug.mode="debug,trace" -d xdebug.start_with_request=yes bin/hyperf.php start
+```
+
+当错误重现时，将会打印错误信息，如：
+
+```log
+PHP Fatal error:  Uncaught Hyperf\GrpcClient\Exception\GrpcClientException: Connect failed, error=Connection refused in /home/helix/hyperf-skeleton/vendor/hyperf/grpc-client/src/GrpcClient.php:107
+Stack trace:
+#0 /home/helix/hyperf-skeleton/vendor/hyperf/grpc-client/src/BaseClient.php(164): Hyperf\GrpcClient\GrpcClient->start()
+#1 /home/helix/hyperf-skeleton/vendor/hyperf/grpc-client/src/BaseClient.php(56): Hyperf\GrpcClient\BaseClient->start()
+#2 /home/helix/colisys/rocketmq-client-php/src/Contract/ClientWrapper.php(415): Hyperf\GrpcClient\BaseClient->_getGrpcClient()
+#3 /home/helix/colisys/rocketmq-client-php/src/Contract/ClientWrapper.php(105): Colisys\Rocketmq\Contract\ClientWrapper->getStream()
+#4 [internal function]: Colisys\Rocketmq\Contract\ClientWrapper->Colisys\Rocketmq\Contract\{closure}()
+#5 {main}
+  thrown in /home/helix/hyperf-skeleton/vendor/hyperf/grpc-client/src/GrpcClient.php on line 107
+```
+
+请将这样的错误信息贴到 Issue 中。
+>>>>>>> Stashed changes

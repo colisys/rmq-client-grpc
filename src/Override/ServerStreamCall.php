@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Override;
+namespace Colisys\RocketmqClient\Grpc\Override;
 
 use Hyperf\Grpc\Parser;
 use Hyperf\Grpc\StatusCode;

@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace Colisys\Rocketmq\Tests\Cases;
 
+use Colisys\Rocketmq\Remoting\Command\CheckClientConfigCommand;
 use Colisys\Rocketmq\Remoting\Command\GetAllTopicsFromNamesrvCommand;
 use Colisys\Rocketmq\Remoting\Command\SendMessageCommand;
 use Colisys\Rocketmq\Remoting\Contract\ConsumeFromWhere;
@@ -141,4 +142,24 @@ class RemotingTest extends TestCase
         $this->assertInstanceOf(GetAllTopicsFromNamesrvCommand::class, $response);
         $this->assertNotEmpty($response->getVersion());
     }
+<<<<<<< Updated upstream
+=======
+
+    public function testCheckClientConfigCommand()
+    {
+        $cmd = CheckClientConfigCommand::createRequestCommand();
+        $client = new CoroutineClient("192.168.31.174", 9999);
+        $response = $client->use(function ($client) use ($cmd): CheckClientConfigCommand|null {
+            if ($client->send($cmd->encode())->isOk()) {
+                $response = $client->recv(10);
+                if ($response->isOk()) {
+                    return CheckClientConfigCommand::createResponseCommand($response->getResult());
+                }
+            }
+            return null;
+        }); 
+        $this->assertInstanceOf(CheckClientConfigCommand::class, $response);
+        var_dump(json_encode($response));
+    }
+>>>>>>> Stashed changes
 }

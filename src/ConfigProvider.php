@@ -9,9 +9,9 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq;
+namespace Colisys\RocketmqClient\Grpc;
 
-use Colisys\Rocketmq\Listener\OnShutdownListener;
+use Colisys\RocketmqClient\Grpc\Listener\OnShutdownListener;
 
 class ConfigProvider
 {
@@ -28,6 +28,7 @@ class ConfigProvider
                     'paths' => [
                         __DIR__ . '/Annotation',
                         __DIR__ . '/Aspect',
+                        __DIR__ . '/Signal'
                     ],
                 ],
             ],

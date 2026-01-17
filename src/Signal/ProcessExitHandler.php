@@ -9,27 +9,28 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Listener;
+namespace Colisys\RocketmqClient\Grpc\Signal;
 
 use Colisys\RocketmqClient\Grpc\Contract\ClientContainer;
-use Colisys\Rocketmq\Helper\Log;
-use Hyperf\Event\Contract\ListenerInterface;
-use Hyperf\Framework\Event\OnShutdown;
+use Hyperf\Signal\Annotation\Signal;
+use Hyperf\Signal\SignalHandlerInterface;
 
 use function Colisys\Rocketmq\Helper\container;
 
-class OnShutdownListener implements ListenerInterface
+#[Signal]
+class ProcessExitHandler implements SignalHandlerInterface
 {
     public function listen(): array
     {
         return [
-            OnShutdown::class,
+            [SignalHandlerInterface::WORKER, SIGINT],
+            [SignalHandlerInterface::WORKER, SIGTERM],
         ];
     }
 
-    public function process(object $event): void
+    public function handle(int $signal): void
     {
-        Log::critical('! RocketMQ capture: shutdown');
+        // TODO Should shutdown clients gracefully.
         container()->get(ClientContainer::class)->shutdown();
     }
 }

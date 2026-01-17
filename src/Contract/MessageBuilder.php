@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Contract;
+namespace Colisys\RocketmqClient\Grpc\Contract;
 
 use Apache\Rocketmq\V2\Digest;
 use Apache\Rocketmq\V2\DigestType;
@@ -19,7 +19,7 @@ use Apache\Rocketmq\V2\SendMessageResponse;
 use Apache\Rocketmq\V2\SystemProperties;
 use Colisys\Rocketmq\Helper\Arr;
 use Colisys\Rocketmq\Helper\Assert;
-use Colisys\Rocketmq\View\SendResultView;
+use Colisys\RocketmqClient\Grpc\View\SendResultView;
 
 abstract class MessageBuilder
 {

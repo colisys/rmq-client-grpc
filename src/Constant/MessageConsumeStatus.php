@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Constant;
+namespace Colisys\RocketmqClient\Grpc\Constant;
 
 enum MessageConsumeStatus
 {

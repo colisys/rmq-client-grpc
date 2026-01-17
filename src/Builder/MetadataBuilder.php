@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Builder;
+namespace Colisys\RocketmqClient\Grpc\Builder;
 
 class MetadataBuilder
 {

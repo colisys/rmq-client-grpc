@@ -9,21 +9,21 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\Rocketmq\Builder;
+namespace Colisys\RocketmqClient\Grpc\Builder;
 
 use Apache\Rocketmq\V2\Message;
 use Apache\Rocketmq\V2\Settings;
 use Closure;
+<<<<<<< Updated upstream
 use Colisys\Rocketmq\Constant\TransactionResult;
 use Colisys\Rocketmq\Contract\ClientContainer;
 use Colisys\Rocketmq\Contract\ConnectionOption;
-use Colisys\Rocketmq\Helper\Assert;
 use Colisys\Rocketmq\Helper\Set;
-use Colisys\Rocketmq\Impl\Producer;
+use Colisys\RocketmqClient\Grpc\Impl\Producer;
+>>>>>>> Stashed changes
 use Hyperf\Context\ApplicationContext;
 use Psr\Container\ContainerInterface;
 use Swoole\Coroutine;
-
 use function Colisys\Rocketmq\Helper\container;
 
 class ProducerBuilder

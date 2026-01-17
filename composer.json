@@ -1,17 +1,17 @@
 {
     "name": "colisys/rocketmq-client-php",
     "type": "library",
-    "version": "0.0.2-dev",
-    "license": "MIT",
+    "version": "0.0.3-dev",
+    "license": "Apache-2.0",
     "keywords": [
         "php",
         "hyperf",
         "rocketmq"
     ],
-    "description": "A third-party RocketMQ SDK port for Hyperf.",
+    "description": "非官方 RocketMQ Client SDK (仅 gRPC 协议)",
     "autoload": {
         "psr-4": {
-            "Colisys\\Rocketmq\\": "src/",
+            "Colisys\\RocketmqClient\\Grpc\\": "src/",
             "Apache\\Rocketmq\\": "protocol/Apache/Rocketmq/",
             "GPBMetadata\\Apache\\Rocketmq\\": "protocol/GPBMetadata/Apache/Rocketmq/"
         },
@@ -33,6 +33,7 @@
         "hyperf/grpc-client": "^3.0",
         "hyperf/logger": "^3.0",
         "hyperf/pool": "^3.0",
+        "hyperf/signal": "^3.1",
         "hyperf/socket": "^3.1"
     },
     "require-dev": {
