@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Impl;
+namespace Colisys\RmqClient\Grpc\Impl;
 
 use Apache\Rocketmq\V2\AckMessageEntry;
 use Apache\Rocketmq\V2\AckMessageRequest;
@@ -32,14 +32,14 @@ use Apache\Rocketmq\V2\SubscriptionEntry;
 use Apache\Rocketmq\V2\TelemetryCommand;
 use Apache\Rocketmq\V2\UA;
 use Closure;
-use Colisys\RocketmqClient\Grpc\Client\ConsumerClient;
-use Colisys\RocketmqClient\Grpc\Constant\MessageConsumeStatus;
-use Colisys\RocketmqClient\Grpc\Constant\SDK;
-use Colisys\RocketmqClient\Grpc\Contract\ConnectionOption;
-use Colisys\RocketmqClient\Grpc\Factory\ConsumerFactory;
+use Colisys\RmqClient\Grpc\Client\ConsumerClient;
+use Colisys\RmqClient\Grpc\Constant\MessageConsumeStatus;
+use Colisys\RmqClient\Grpc\Constant\SDK;
+use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
+use Colisys\RmqClient\Grpc\Factory\ConsumerFactory;
 use Colisys\Rocketmq\Helper\Arr;
 use Colisys\Rocketmq\Helper\Log;
-use Colisys\RocketmqClient\Grpc\View\MessageView;
+use Colisys\RmqClient\Grpc\View\MessageView;
 use Exception;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\Coordinator\CoordinatorManager;

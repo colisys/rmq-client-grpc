@@ -9,9 +9,9 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc;
+namespace Colisys\RmqClient\Grpc;
 
-use Colisys\RocketmqClient\Grpc\Listener\OnShutdownListener;
+use Colisys\RmqClient\Grpc\Listener\OnShutdownListener;
 
 class ConfigProvider
 {

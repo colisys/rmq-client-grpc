@@ -9,12 +9,12 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Builder;
+namespace Colisys\RmqClient\Grpc\Builder;
 
 use Apache\Rocketmq\V2\MessageType;
 use Closure;
-use Colisys\RocketmqClient\Grpc\Constant\TransactionResult;
-use Colisys\RocketmqClient\Grpc\Contract\MessageBuilder;
+use Colisys\RmqClient\Grpc\Constant\TransactionResult;
+use Colisys\RmqClient\Grpc\Contract\MessageBuilder;
 use Colisys\Rocketmq\Helper\Assert;
 use ReflectionMethod;
 

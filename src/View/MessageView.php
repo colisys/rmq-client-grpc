@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\View;
+namespace Colisys\RmqClient\Grpc\View;
 
 use Apache\Rocketmq\V2\Message;
 

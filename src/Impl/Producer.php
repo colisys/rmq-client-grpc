@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Impl;
+namespace Colisys\RmqClient\Grpc\Impl;
 
 use Apache\Rocketmq\V2\ClientType;
 use Apache\Rocketmq\V2\EndTransactionRequest;
@@ -24,17 +24,17 @@ use Apache\Rocketmq\V2\TelemetryCommand;
 use Apache\Rocketmq\V2\TransactionResolution;
 use Apache\Rocketmq\V2\TransactionSource;
 use Closure;
-use Colisys\RocketmqClient\Grpc\Builder\SimpleMessageBuilder;
-use Colisys\RocketmqClient\Grpc\Builder\TransactionMessageBuilder;
-use Colisys\RocketmqClient\Grpc\Client\ProducerClient;
-use Colisys\RocketmqClient\Grpc\Constant\TransactionResult;
-use Colisys\RocketmqClient\Grpc\Contract\ConnectionOption;
-use Colisys\RocketmqClient\Grpc\Contract\MessageBuilder;
-use Colisys\RocketmqClient\Grpc\Factory\ProducerFactory;
+use Colisys\RmqClient\Grpc\Builder\SimpleMessageBuilder;
+use Colisys\RmqClient\Grpc\Builder\TransactionMessageBuilder;
+use Colisys\RmqClient\Grpc\Client\ProducerClient;
+use Colisys\RmqClient\Grpc\Constant\TransactionResult;
+use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
+use Colisys\RmqClient\Grpc\Contract\MessageBuilder;
+use Colisys\RmqClient\Grpc\Factory\ProducerFactory;
 use Colisys\Rocketmq\Helper\Arr;
 use Colisys\Rocketmq\Helper\Log;
 use Colisys\Rocketmq\Helper\Set;
-use Colisys\RocketmqClient\Grpc\View\MessageView;
+use Colisys\RmqClient\Grpc\View\MessageView;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\Coordinator\Constants;
 use Hyperf\Coordinator\CoordinatorManager;

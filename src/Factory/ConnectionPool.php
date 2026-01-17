@@ -9,12 +9,12 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Factory;
+namespace Colisys\RmqClient\Grpc\Factory;
 
-use Colisys\RocketmqClient\Grpc\Builder\MetadataBuilder;
-use Colisys\RocketmqClient\Grpc\Constant\SDK;
-use Colisys\RocketmqClient\Grpc\Contract\ClientWrapper;
-use Colisys\RocketmqClient\Grpc\Contract\ConnectionOption;
+use Colisys\RmqClient\Grpc\Builder\MetadataBuilder;
+use Colisys\RmqClient\Grpc\Constant\SDK;
+use Colisys\RmqClient\Grpc\Contract\ClientWrapper;
+use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
 use Colisys\Rocketmq\Helper\Signature;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\Contract\ConnectionInterface;

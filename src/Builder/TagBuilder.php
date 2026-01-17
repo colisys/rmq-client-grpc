@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Builder;
+namespace Colisys\RmqClient\Grpc\Builder;
 
 use Colisys\Rocketmq\Helper\Set;
 

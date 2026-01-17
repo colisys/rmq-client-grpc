@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Constant;
+namespace Colisys\RmqClient\Grpc\Constant;
 
 final class SDK
 {

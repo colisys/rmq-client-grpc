@@ -9,9 +9,9 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Signal;
+namespace Colisys\RmqClient\Grpc\Signal;
 
-use Colisys\RocketmqClient\Grpc\Contract\ClientContainer;
+use Colisys\RmqClient\Grpc\Contract\ClientContainer;
 use Hyperf\Signal\Annotation\Signal;
 use Hyperf\Signal\SignalHandlerInterface;
 

@@ -9,14 +9,14 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Client;
+namespace Colisys\RmqClient\Grpc\Client;
 
 use Apache\Rocketmq\V2\EndTransactionRequest;
 use Apache\Rocketmq\V2\EndTransactionResponse;
 use Apache\Rocketmq\V2\SendMessageRequest;
 use Apache\Rocketmq\V2\SendMessageResponse;
-use Colisys\RocketmqClient\Grpc\Contract\ClientWrapper;
-use Colisys\RocketmqClient\Grpc\Contract\ConnectionOption;
+use Colisys\RmqClient\Grpc\Contract\ClientWrapper;
+use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
 use Grpc\ChannelCredentials;
 
 /**

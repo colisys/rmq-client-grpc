@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Builder;
+namespace Colisys\RmqClient\Grpc\Builder;
 
 use Apache\Rocketmq\V2\Message;
 use Apache\Rocketmq\V2\Settings;
@@ -19,7 +19,7 @@ use Colisys\Rocketmq\Constant\TransactionResult;
 use Colisys\Rocketmq\Contract\ClientContainer;
 use Colisys\Rocketmq\Contract\ConnectionOption;
 use Colisys\Rocketmq\Helper\Set;
-use Colisys\RocketmqClient\Grpc\Impl\Producer;
+use Colisys\RmqClient\Grpc\Impl\Producer;
 >>>>>>> Stashed changes
 use Hyperf\Context\ApplicationContext;
 use Psr\Container\ContainerInterface;

@@ -9,10 +9,10 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Builder;
+namespace Colisys\RmqClient\Grpc\Builder;
 
-use Colisys\RocketmqClient\Grpc\Contract\FilterBoolean;
-use Colisys\RocketmqClient\Grpc\Contract\FilterOperator;
+use Colisys\RmqClient\Grpc\Contract\FilterBoolean;
+use Colisys\RmqClient\Grpc\Contract\FilterOperator;
 use Colisys\Rocketmq\Helper\Assert;
 
 /**

@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Contract;
+namespace Colisys\RmqClient\Grpc\Contract;
 
 /**
  * SQL92 Filter Boolean.

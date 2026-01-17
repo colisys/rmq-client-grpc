@@ -9,10 +9,10 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Contract;
+namespace Colisys\RmqClient\Grpc\Contract;
 
-use Colisys\RocketmqClient\Grpc\Impl\Consumer;
-use Colisys\RocketmqClient\Grpc\Impl\Producer;
+use Colisys\RmqClient\Grpc\Impl\Consumer;
+use Colisys\RmqClient\Grpc\Impl\Producer;
 use Psr\Container\ContainerInterface;
 
 class ClientContainer implements ContainerInterface

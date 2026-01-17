@@ -9,10 +9,10 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Builder;
+namespace Colisys\RmqClient\Grpc\Builder;
 
 use Apache\Rocketmq\V2\MessageType;
-use Colisys\RocketmqClient\Grpc\Contract\MessageBuilder;
+use Colisys\RmqClient\Grpc\Contract\MessageBuilder;
 use Google\Protobuf\Timestamp;
 
 /**

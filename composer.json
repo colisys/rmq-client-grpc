@@ -1,5 +1,5 @@
 {
-    "name": "colisys/rocketmq-client-php",
+    "name": "colisys/rmq-client-grpc",
     "type": "library",
     "version": "0.0.3-dev",
     "license": "Apache-2.0",
@@ -11,7 +11,7 @@
     "description": "非官方 RocketMQ Client SDK (仅 gRPC 协议)",
     "autoload": {
         "psr-4": {
-            "Colisys\\RocketmqClient\\Grpc\\": "src/",
+            "Colisys\\RmqClient\\Grpc\\": "src/",
             "Apache\\Rocketmq\\": "protocol/Apache/Rocketmq/",
             "GPBMetadata\\Apache\\Rocketmq\\": "protocol/GPBMetadata/Apache/Rocketmq/"
         },

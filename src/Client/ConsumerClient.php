@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Client;
+namespace Colisys\RmqClient\Grpc\Client;
 
 use Apache\Rocketmq\V2\AckMessageRequest;
 use Apache\Rocketmq\V2\AckMessageResponse;
@@ -23,8 +23,8 @@ use Apache\Rocketmq\V2\PullMessageRequest;
 use Apache\Rocketmq\V2\PullMessageResponse;
 use Apache\Rocketmq\V2\ReceiveMessageRequest;
 use Apache\Rocketmq\V2\ReceiveMessageResponse;
-use Colisys\RocketmqClient\Grpc\Contract\ClientWrapper;
-use Colisys\RocketmqClient\Grpc\Contract\ConnectionOption;
+use Colisys\RmqClient\Grpc\Contract\ClientWrapper;
+use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
 use Colisys\Rocketmq\Helper\Assert;
 use Colisys\Rocketmq\Helper\Log;
 use Grpc\ChannelCredentials;

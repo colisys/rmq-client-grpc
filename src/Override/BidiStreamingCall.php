@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @copyright 2025 Colisys
  */
 
-namespace Colisys\RocketmqClient\Grpc\Override;
+namespace Colisys\RmqClient\Grpc\Override;
 
 class BidiStreamingCall extends StreamingCall
 {
