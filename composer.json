@@ -75,7 +75,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "Colisys\\Rocketmq\\ConfigProvider"
+            "config": "Colisys\\RmqClient\\Grpc\\ConfigProvider"
         }
     }
 }
