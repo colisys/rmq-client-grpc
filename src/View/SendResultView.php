@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 /**
- * Third-party RocketMQ Client SDK for Hyperf
+ * Unofficial RocketMQ Client SDK for Hyperf
  *
  * @contact colisys@duck.com
- * @license MIT
+ * @license Apache-2.0
  * @copyright 2025 Colisys
  */
 

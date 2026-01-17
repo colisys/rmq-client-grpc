@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 /**
- * Third-party RocketMQ Client SDK for Hyperf
+ * Unofficial RocketMQ Client SDK for Hyperf
  *
  * @contact colisys@duck.com
- * @license MIT
+ * @license Apache-2.0
  * @copyright 2025 Colisys
  */
 
@@ -27,10 +27,10 @@ use Apache\Rocketmq\V2\TelemetryCommand;
 use Apache\Rocketmq\V2\UpdateOffsetRequest;
 use Apache\Rocketmq\V2\UpdateOffsetResponse;
 use Closure;
-use Colisys\Rocketmq\Helper\Log;
 use Colisys\RmqClient\Grpc\Override\BaseClient;
 use Colisys\RmqClient\Grpc\Override\ServerStreamCall;
 use Colisys\RmqClient\Grpc\Override\StreamingCall;
+use Colisys\Rocketmq\Helper\Log;
 use Error;
 use Exception;
 use Hyperf\Coordinator\Constants;

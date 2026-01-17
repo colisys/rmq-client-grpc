@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 /**
- * Third-party RocketMQ Client SDK for Hyperf
+ * Unofficial RocketMQ Client SDK for Hyperf
  *
  * @contact colisys@duck.com
- * @license MIT
+ * @license Apache-2.0
  * @copyright 2025 Colisys
  */
 
@@ -37,9 +37,9 @@ use Colisys\RmqClient\Grpc\Constant\MessageConsumeStatus;
 use Colisys\RmqClient\Grpc\Constant\SDK;
 use Colisys\RmqClient\Grpc\Contract\ConnectionOption;
 use Colisys\RmqClient\Grpc\Factory\ConsumerFactory;
+use Colisys\RmqClient\Grpc\View\MessageView;
 use Colisys\Rocketmq\Helper\Arr;
 use Colisys\Rocketmq\Helper\Log;
-use Colisys\RmqClient\Grpc\View\MessageView;
 use Exception;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\Coordinator\CoordinatorManager;

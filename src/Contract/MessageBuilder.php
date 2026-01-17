@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 /**
- * Third-party RocketMQ Client SDK for Hyperf
+ * Unofficial RocketMQ Client SDK for Hyperf
  *
  * @contact colisys@duck.com
- * @license MIT
+ * @license Apache-2.0
  * @copyright 2025 Colisys
  */
 
@@ -17,9 +17,9 @@ use Apache\Rocketmq\V2\Message;
 use Apache\Rocketmq\V2\Resource;
 use Apache\Rocketmq\V2\SendMessageResponse;
 use Apache\Rocketmq\V2\SystemProperties;
+use Colisys\RmqClient\Grpc\View\SendResultView;
 use Colisys\Rocketmq\Helper\Arr;
 use Colisys\Rocketmq\Helper\Assert;
-use Colisys\RmqClient\Grpc\View\SendResultView;
 
 abstract class MessageBuilder
 {
