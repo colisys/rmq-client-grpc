@@ -21,7 +21,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Colisys\\Rocketmq\\Tests\\": "tests/"
+            "Colisys\\RmqClient\\Tests\\": "tests/"
         }
     },
     "require": {

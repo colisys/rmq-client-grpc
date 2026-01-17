@@ -14,13 +14,11 @@ namespace Colisys\RmqClient\Grpc\Builder;
 use Apache\Rocketmq\V2\Message;
 use Apache\Rocketmq\V2\Settings;
 use Closure;
-<<<<<<< Updated upstream
 use Colisys\RmqClient\Shared\Constant\TransactionResult;
 use Colisys\RmqClient\Shared\Contract\ClientContainer;
 use Colisys\RmqClient\Shared\Contract\ConnectionOption;
 use Colisys\RmqClient\Shared\Helper\Set;
 use Colisys\RmqClient\Grpc\Impl\Producer;
->>>>>>> Stashed changes
 use Hyperf\Context\ApplicationContext;
 use Psr\Container\ContainerInterface;
 use Swoole\Coroutine;
